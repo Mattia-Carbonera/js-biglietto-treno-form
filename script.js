@@ -28,6 +28,7 @@ function priceCounter(kilometersAdded, ageOfPassenger) {
 // ---------------------------RIPORTO A SCHERMO I RISULTATI---------------------------
 
 buttonGenera.addEventListener("click", () => {
+  const passengerName = userName.value;
   const numberOfKilometers = parseInt(kilometers.value);
   const userAge = userAgeRequest.value;
   //   console.log(numberOfKilometers);
@@ -35,7 +36,10 @@ buttonGenera.addEventListener("click", () => {
 
   let finisPrize = priceCounter(numberOfKilometers, userAge);
 
-  console.log("Il prezzo finale è di €", finisPrize.toFixed(2));
+  console.log("Gentile il prezzo finale è di €", finisPrize.toFixed(2));
+  console.log(
+    `Gentile ${passengerName} il prezzo finale è di € ${finisPrize.toFixed(2)}`
+  );
 });
 
 // conso)e.log(userNameEl);
