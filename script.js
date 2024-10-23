@@ -35,7 +35,7 @@ function selectedAge(ageOfPassenger) {
   } else if (ageOfPassenger == 2) {
     return "Biglietto intero";
   } else if (ageOfPassenger == 3) {
-    return "Niglietto per over 65";
+    return "Biglietto per over 65";
   }
 }
 
