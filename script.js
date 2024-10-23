@@ -44,17 +44,30 @@ function selectedAge(ageOfPassenger) {
 buttonGenera.addEventListener("click", () => {
   const passengerName = userName.value;
   const numberOfKilometers = parseInt(kilometers.value);
+  console.log(typeof numberOfKilometers);
   const userAge = userAgeRequest.value;
-  //   console.log(numberOfKilometers);
-  //   console.log(userAge);
 
   const passengerAge = selectedAge(userAge);
   let finisPrize = priceCounter(numberOfKilometers, userAge);
 
+  // ******* INPUT CONTROL *******
+
+  if (passengerName < 3) {
+    alert("inserire un nome");
+    return;
+  } else if (numberOfKilometers < 1 || isNaN(numberOfKilometers)) {
+    alert("Inserire i chilometri");
+    return;
+  } else if (userAge == 0) {
+    alert(`Inserire l'età del passeggero`);
+    return;
+  }
+
+  // ******* STAMPO A SCHERMO IL TICKET *******
+
   console.log(
     `Gentile ${passengerName} il prezzo finale è di € ${finisPrize.toFixed(2)}`
   );
-  // --------------------------- STAMPO A SCHERMO IL TICKET ---------------------------
 
   userTicketEl.innerHTML = `<div class="ticket-detalis mt-5 pt-3 border bg-light">
           <h2 class="text-center">IL TUO BIGLIETTO</h2>
