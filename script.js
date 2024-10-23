@@ -36,7 +36,6 @@ buttonGenera.addEventListener("click", () => {
 
   let finisPrize = priceCounter(numberOfKilometers, userAge);
 
-  console.log("Gentile il prezzo finale è di €", finisPrize.toFixed(2));
   console.log(
     `Gentile ${passengerName} il prezzo finale è di € ${finisPrize.toFixed(2)}`
   );
