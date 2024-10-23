@@ -44,7 +44,6 @@ function selectedAge(ageOfPassenger) {
 buttonGenera.addEventListener("click", () => {
   const passengerName = userName.value;
   const numberOfKilometers = parseInt(kilometers.value);
-  console.log(typeof numberOfKilometers);
   const userAge = userAgeRequest.value;
 
   const passengerAge = selectedAge(userAge);
