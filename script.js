@@ -35,7 +35,7 @@ buttonGenera.addEventListener("click", () => {
 
   let finisPrize = priceCounter(numberOfKilometers, userAge);
 
-  console.log("Il prezzo finale è di €", finisPrize);
+  console.log("Il prezzo finale è di €", finisPrize.toFixed(2));
 });
 
 // conso)e.log(userNameEl);

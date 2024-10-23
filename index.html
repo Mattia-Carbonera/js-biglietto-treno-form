@@ -24,38 +24,71 @@
   </head>
   <body>
     <div class="container">
-      <form action="">
-        <div class="name-container">
-          <label for="input-name">Nome e Cognome</label>
-          <input type="text" id="input-name" class="form-control" />
+      <form action="" class="border m-3 pt-3">
+        <h2 class="text-center">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+
+        <div class="input-request row p-5">
+          <div class="name-container col-4">
+            <label for="input-name">Nome e Cognome</label>
+            <input type="text" id="input-name" class="form-control" />
+          </div>
+
+          <div class="chilometri-container col-4">
+            <label for="input-chilometri">Km da percorrere</label>
+            <input type="number" id="input-chilometri" class="form-control" />
+          </div>
+
+          <div class="selection-age-container col-4">
+            <label for="age-container">Età del cliente</label>
+
+            <select
+              class="form-select"
+              aria-label="Default select example"
+              id="age-container"
+            >
+              <option selected>Open this select menu</option>
+              <option value="1">Minorenne</option>
+              <option value="2">Maggiorenne</option>
+              <option value="3">Over 65</option>
+            </select>
+          </div>
         </div>
 
-        <div class="chilometri-container">
-          <label for="input-chilometri">Km da percorrere</label>
-          <input type="number" id="input-chilometri" class="form-control" />
-        </div>
-
-        <div class="selection-age-container">
-          <select
-            class="form-select"
-            aria-label="Default select example"
-            id="age-container"
-          >
-            <option selected>Open this select menu</option>
-            <option value="1">Minorenne</option>
-            <option value="2">Maggiorenne</option>
-            <option value="3">Over 65</option>
-          </select>
-        </div>
-        <div class="btn-uno">
-          <button type="button" class="btn btn-primary" id="button-genera">
-            Genera
-          </button>
-        </div>
-        <div class="btn-due">
-          <button type="button" class="btn btn-secondary">Annulla</button>
+        <div class="button-input-container d-flex justify-content-around p-5">
+          <div class="btn-uno">
+            <button type="button" class="btn btn-primary" id="button-genera">
+              Genera
+            </button>
+          </div>
+          <div class="btn-due">
+            <button type="button" class="btn btn-secondary">Annulla</button>
+          </div>
         </div>
       </form>
+
+      <div class="ticket-detalis mt-5 pt-3 border">
+        <h2 class="text-center">IL TUO BIGLIETTO</h2>
+        <div class="passenger-detalis row text-center mt-5">
+          <div class="name-passenger-request col-4">
+            <h3>Dettaglio passeggeri</h3>
+            <div class="name-passengher mt-5 mb-5">*nome*</div>
+          </div>
+          <div class="generic-detalis-titol col-8">
+            <div class="titol-detalis row text-center">
+              <div class="offerta col-4">Offerta</div>
+              <div class="offerta col-2">Carrozza</div>
+              <div class="offerta col-2">CodiceCP</div>
+              <div class="offerta col-4">Costo biglietto</div>
+            </div>
+            <div class="generic-detalis row mt-5">
+              <div class="offerta col-4">* sconto*</div>
+              <div class="offerta col-2">5</div>
+              <div class="offerta col-2">92911</div>
+              <div class="offerta col-4">*prezzo*</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- bootstrap js -->
     <!-- <script
