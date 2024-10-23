@@ -23,6 +23,38 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <div class="container">
+      <form action="">
+        <div class="name-container">
+          <label for="input-name">Nome e Cognome</label>
+          <input type="text" id="input-name" class="form-control" />
+        </div>
+
+        <div class="chilometri-container">
+          <label for="input-chilometri">Km da percorrere</label>
+          <input type="number" id="input-chilometri" class="form-control" />
+        </div>
+
+        <div class="selection-age-container">
+          <select
+            class="form-select"
+            aria-label="Default select example"
+            id="age-container"
+          >
+            <option selected>Open this select menu</option>
+            <option value="1">Minorenne</option>
+            <option value="2">Maggiorenne</option>
+            <option value="3">Over 65</option>
+          </select>
+        </div>
+        <div class="btn-uno">
+          <button class="btn btn-primary" id="button-genera">Genera</button>
+        </div>
+        <div class="btn-due">
+          <button class="btn btn-secondary">Annulla</button>
+        </div>
+      </form>
+    </div>
     <!-- bootstrap js -->
     <!-- <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
