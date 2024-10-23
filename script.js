@@ -79,6 +79,10 @@ buttonGenera.addEventListener("click", () => {
             </div>
           </div>
         </div>`;
+
+  userName.value = "";
+  kilometers.value = "";
+  userAgeRequest.value = 0;
 });
 
 // console.log(userName);
